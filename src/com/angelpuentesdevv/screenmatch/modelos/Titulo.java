@@ -59,7 +59,7 @@ public class Titulo {
     public void muestraFichaTecnica(){
         System.out.println("Película: " + nombre);
         System.out.println("Fecha de Lanzamiento: " + fechaDeLanzamiento);
-        System.out.println("Duración: " + duracionEnMinutos + " minutos");
+        System.out.println("Duración en minutos: " + getDuracionEnMinutos());
     }
 
     //Este método recibe un parámetro

@@ -26,7 +26,7 @@ public class Principal {
         miSerie.setFechaDeLanzamiento(2006);
         miSerie.setTemporadas(1);
         miSerie.setEpisodiosPorTemporada(37);
-        miSerie.setDuracionEnMinutos(21);
+        miSerie.setMinutosPorEpisodio(21);
         miSerie.setIncluidoEnElPlan(true);
 
         miSerie.muestraFichaTecnica();
@@ -35,7 +35,7 @@ public class Principal {
         miSerie.evaluaTitulo(9.0);
         System.out.println(miSerie.getTotalDeLasEvaluaciones());
         System.out.println(miSerie.calculaMediaTitulo());
-
-
+        System.out.println(miSerie.getDuracionEnMinutos());
+        miSerie.muestraFichaTecnica();
     }
 }
