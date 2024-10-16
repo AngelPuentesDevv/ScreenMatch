@@ -8,13 +8,17 @@ public class Principal {
         //Crear modelo u objeto de tipo película
         //La palabra reservada new crea una instancia de la clase modelo
         Pelicula miPelicula = new Pelicula();
-        Serie miSerie = new Serie();
-
         //Métodos que ofrece la clase com.angelpuentesdevv.screenmatch.modelos.Pelicula "miPelicula.[método]", se pueden atribuir valores
         miPelicula.setNombre("Se levanta el viento");
         miPelicula.setFechaDeLanzamiento(2013);
         miPelicula.setDuracionEnMinutos(126);
         miPelicula.setIncluidoEnElPlan(true);
+
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Test");
+        otraPelicula.setFechaDeLanzamiento(2024);
+        otraPelicula.setIncluidoEnElPlan(true);
+        otraPelicula.setDuracionEnMinutos(7);
 
         miPelicula.muestraFichaTecnica();
         miPelicula.evaluaTitulo(8.0);
@@ -23,6 +27,7 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMediaTitulo());
 
+        Serie miSerie = new Serie();
         miSerie.setNombre("Death Note");
         miSerie.setFechaDeLanzamiento(2006);
         miSerie.setTemporadas(1);
@@ -42,7 +47,8 @@ public class Principal {
         CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
         calculadora.incluye(miPelicula);
         calculadora.incluye(miSerie);
-        System.out.println(calculadora.getTiempoTotal());
+        calculadora.incluye(otraPelicula);
+        System.out.println("El tiempo que necesitas para ver los tres títulos es: " +calculadora.getTiempoTotal()+ " minutos.");
 
     }
 }
