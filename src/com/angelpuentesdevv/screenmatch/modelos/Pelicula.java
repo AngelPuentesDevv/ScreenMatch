@@ -8,7 +8,7 @@ public class Pelicula extends Titulo implements Clasificacion {
 
     @Override
     public int getClasificacion() {
-        return 0;
+        return (int) (calculaMediaTitulo() / 2);
     }
 
     public String getDirector() {
