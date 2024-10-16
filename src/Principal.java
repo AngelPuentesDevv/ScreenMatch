@@ -1,3 +1,4 @@
+import com.angelpuentesdevv.screenmatch.calculos.CalculadoraDeTiempo;
 import com.angelpuentesdevv.screenmatch.modelos.Pelicula;
 import com.angelpuentesdevv.screenmatch.modelos.Serie;
 
@@ -37,5 +38,11 @@ public class Principal {
         System.out.println(miSerie.calculaMediaTitulo());
         System.out.println(miSerie.getDuracionEnMinutos());
         miSerie.muestraFichaTecnica();
+
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(miPelicula);
+        calculadora.incluye(miSerie);
+        System.out.println(calculadora.getTiempoTotal());
+
     }
 }

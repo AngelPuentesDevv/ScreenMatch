@@ -57,7 +57,7 @@ public class Titulo {
     //Creación de un nuevo método (Convención: verbos en imperativo)
 
     public void muestraFichaTecnica(){
-        System.out.println("Película: " + nombre);
+        System.out.println("Título: " + nombre);
         System.out.println("Fecha de Lanzamiento: " + fechaDeLanzamiento);
         System.out.println("Duración en minutos: " + getDuracionEnMinutos());
     }
