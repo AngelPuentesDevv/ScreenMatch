@@ -1,4 +1,6 @@
 import com.angelpuentesdevv.screenmatch.calculos.CalculadoraDeTiempo;
+import com.angelpuentesdevv.screenmatch.calculos.FiltroRecomendacion;
+import com.angelpuentesdevv.screenmatch.modelos.Episodio;
 import com.angelpuentesdevv.screenmatch.modelos.Pelicula;
 import com.angelpuentesdevv.screenmatch.modelos.Serie;
 
@@ -21,9 +23,9 @@ public class Principal {
         otraPelicula.setDuracionEnMinutos(7);
 
         miPelicula.muestraFichaTecnica();
-        miPelicula.evaluaTitulo(8.0);
-        miPelicula.evaluaTitulo(9.0);
-        miPelicula.evaluaTitulo(10);
+        miPelicula.evaluaTitulo(8);
+        miPelicula.evaluaTitulo(5);
+        miPelicula.evaluaTitulo(9);
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMediaTitulo());
 
@@ -44,11 +46,20 @@ public class Principal {
         System.out.println(miSerie.getDuracionEnMinutos());
         miSerie.muestraFichaTecnica();
 
+        Episodio miEpisodio = new Episodio();
+        miEpisodio.setNombre("Renacimiento");
+        miEpisodio.setNumero(1);
+        miEpisodio.setSerie(miSerie);
+        miEpisodio.setTotalVisualizaciones(1);
+
         CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
         calculadora.incluye(miPelicula);
         calculadora.incluye(miSerie);
         calculadora.incluye(otraPelicula);
         System.out.println("El tiempo que necesitas para ver los tres títulos es: " +calculadora.getTiempoTotal()+ " minutos.");
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPelicula);
+        filtroRecomendacion.filtra(miEpisodio);
     }
 }

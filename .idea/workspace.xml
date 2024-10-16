@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bec0f6b-5441-4183-8f96-03736aa007e6" name="Changes" comment="crear clase titulo, pelicula y serie, hijas de titulo.">
+      <change afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/calculos/FiltroRecomendacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Episodio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Episodio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Pelicula.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <workItem from="1727373678711" duration="2905000" />
       <workItem from="1728583625622" duration="5151000" />
       <workItem from="1728919789789" duration="5417000" />
-      <workItem from="1729086138936" duration="8119000" />
+      <workItem from="1729086138936" duration="8780000" />
     </task>
     <servers />
   </component>
