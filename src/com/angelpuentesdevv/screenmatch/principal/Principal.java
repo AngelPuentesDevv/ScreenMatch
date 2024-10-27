@@ -1,3 +1,5 @@
+package com.angelpuentesdevv.screenmatch.principal;
+
 import com.angelpuentesdevv.screenmatch.calculos.CalculadoraDeTiempo;
 import com.angelpuentesdevv.screenmatch.calculos.FiltroRecomendacion;
 import com.angelpuentesdevv.screenmatch.modelos.Episodio;
@@ -11,16 +13,12 @@ public class Principal {
     public static void main(String[] args) {
         //Crear modelo u objeto de tipo película
         //La palabra reservada new crea una instancia de la clase modelo
-        Pelicula miPelicula = new Pelicula();
+        Pelicula miPelicula = new Pelicula("Se levanta el viento", 2013);
         //Métodos que ofrece la clase com.angelpuentesdevv.screenmatch.modelos.Pelicula "miPelicula.[método]", se pueden atribuir valores
-        miPelicula.setNombre("Se levanta el viento");
-        miPelicula.setFechaDeLanzamiento(2013);
         miPelicula.setDuracionEnMinutos(126);
         miPelicula.setIncluidoEnElPlan(true);
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Test");
-        otraPelicula.setFechaDeLanzamiento(2024);
+        Pelicula otraPelicula = new Pelicula("Test", 2024);
         otraPelicula.setIncluidoEnElPlan(true);
         otraPelicula.setDuracionEnMinutos(7);
 
@@ -31,9 +29,7 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMediaTitulo());
 
-        Serie miSerie = new Serie();
-        miSerie.setNombre("Death Note");
-        miSerie.setFechaDeLanzamiento(2006);
+        Serie miSerie = new Serie("Death Note", 2006);
         miSerie.setTemporadas(1);
         miSerie.setEpisodiosPorTemporada(37);
         miSerie.setMinutosPorEpisodio(21);
@@ -64,10 +60,8 @@ public class Principal {
         filtroRecomendacion.filtra(miPelicula);
         filtroRecomendacion.filtra(miEpisodio);
 
-        var spiritedAway = new Pelicula();
-        spiritedAway.setNombre("Spirited Away");
+        var spiritedAway = new Pelicula("Spirited Away", 2001);
         spiritedAway.setDuracionEnMinutos(125);
-        spiritedAway.setFechaDeLanzamiento(2001);
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
         listaDePeliculas.add(miPelicula);
@@ -76,8 +70,6 @@ public class Principal {
 
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
         System.out.println("La primera película de la lista es: " + listaDePeliculas.get(0).toString());
-
-
 
     }
 }

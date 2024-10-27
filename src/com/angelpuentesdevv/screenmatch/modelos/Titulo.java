@@ -1,6 +1,6 @@
 package com.angelpuentesdevv.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
     //Atributos que representan las características del objeto
 
@@ -15,6 +15,13 @@ public class Titulo {
     private double sumaDeLasEvaluaciones;
 
     private int totalDeLasEvaluaciones;
+
+    //Creación de constructor
+
+    public Titulo(String nombre, int fechaDeLanzamiento) {
+        this.nombre = nombre;
+        this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
 
     // Los getters y setters son métodos que me ayudan a modificar y leer los valores de los atributos desde otras clases.
 
@@ -36,10 +43,6 @@ public class Titulo {
 
     public int getTotalDeLasEvaluaciones() {
         return totalDeLasEvaluaciones;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
@@ -73,4 +76,8 @@ public class Titulo {
         return sumaDeLasEvaluaciones / totalDeLasEvaluaciones;
     }
 
+    @Override
+    public int compareTo(Titulo otroTitulo) {
+        return this.getNombre().compareTo(otroTitulo.getNombre());
+    }
 }
