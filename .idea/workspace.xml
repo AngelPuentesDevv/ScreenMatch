@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bec0f6b-5441-4183-8f96-03736aa007e6" name="Changes" comment="crear clase titulo, pelicula y serie, hijas de titulo.">
-      <change afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/calculos/FiltroRecomendacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Episodio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Episodio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Pelicula.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,9 @@
     &quot;accountId&quot;: &quot;b4ba9172-7b91-4f34-a918-24837086678d&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-17/lib/src.zip!/java.base/java/io/PrintStream.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -86,7 +88,11 @@
       <workItem from="1727373678711" duration="2905000" />
       <workItem from="1728583625622" duration="5151000" />
       <workItem from="1728919789789" duration="5417000" />
-      <workItem from="1729086138936" duration="8780000" />
+      <workItem from="1729086138936" duration="11425000" />
+      <workItem from="1729119284045" duration="27000" />
+      <workItem from="1729639073352" duration="4402000" />
+      <workItem from="1729808330364" duration="3669000" />
+      <workItem from="1730038848566" duration="640000" />
     </task>
     <servers />
   </component>

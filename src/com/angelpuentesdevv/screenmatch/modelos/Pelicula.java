@@ -11,6 +11,11 @@ public class Pelicula extends Titulo implements Clasificacion {
         return (int) (calculaMediaTitulo() / 2);
     }
 
+    @Override
+    public String toString() {
+        return this.getNombre() + " (" + getFechaDeLanzamiento() + ")";
+    }
+
     public String getDirector() {
         return director;
     }

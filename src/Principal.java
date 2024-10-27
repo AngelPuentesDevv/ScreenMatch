@@ -4,6 +4,8 @@ import com.angelpuentesdevv.screenmatch.modelos.Episodio;
 import com.angelpuentesdevv.screenmatch.modelos.Pelicula;
 import com.angelpuentesdevv.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
 
     public static void main(String[] args) {
@@ -61,5 +63,21 @@ public class Principal {
         FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
         filtroRecomendacion.filtra(miPelicula);
         filtroRecomendacion.filtra(miEpisodio);
+
+        var spiritedAway = new Pelicula();
+        spiritedAway.setNombre("Spirited Away");
+        spiritedAway.setDuracionEnMinutos(125);
+        spiritedAway.setFechaDeLanzamiento(2001);
+
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(miPelicula);
+        listaDePeliculas.add(spiritedAway);
+        listaDePeliculas.add(otraPelicula);
+
+        System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
+        System.out.println("La primera película de la lista es: " + listaDePeliculas.get(0).toString());
+
+
+
     }
 }
