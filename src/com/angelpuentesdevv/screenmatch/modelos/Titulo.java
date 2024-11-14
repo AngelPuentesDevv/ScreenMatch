@@ -1,11 +1,16 @@
 package com.angelpuentesdevv.screenmatch.modelos;
 
+import com.angelpuentesdevv.screenmatch.excepcion.ErrorEnConversionDeDuracionException;
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo> {
 
     //Atributos que representan las características del objeto
 
+    @SerializedName("Title")
     private String nombre;
 
+    @SerializedName("Year")
     private int fechaDeLanzamiento;
 
     private int duracionEnMinutos;
@@ -21,6 +26,16 @@ public class Titulo implements Comparable<Titulo> {
     public Titulo(String nombre, int fechaDeLanzamiento) {
         this.nombre = nombre;
         this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
+
+    public Titulo(TituloOmdb miTituloOmdb) {
+        this.nombre = miTituloOmdb.title();
+        this.fechaDeLanzamiento = Integer.valueOf(miTituloOmdb.year());
+        if (miTituloOmdb.runtime().contains("N/A")){
+            throw new ErrorEnConversionDeDuracionException("No es posible convertir la duración, "
+            + "porque contiene un N/A");
+        }
+        this.duracionEnMinutos = Integer.valueOf(miTituloOmdb.runtime().substring(0,3).replace(" ", ""));
     }
 
     // Los getters y setters son métodos que me ayudan a modificar y leer los valores de los atributos desde otras clases.
@@ -79,5 +94,13 @@ public class Titulo implements Comparable<Titulo> {
     @Override
     public int compareTo(Titulo otroTitulo) {
         return this.getNombre().compareTo(otroTitulo.getNombre());
+    }
+
+    @Override
+    public String toString() {
+        return
+                "nombre='" + nombre + '\'' +
+                ", fechaDeLanzamiento=" + fechaDeLanzamiento +
+                ", duración= " + duracionEnMinutos;
     }
 }

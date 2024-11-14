@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bec0f6b-5441-4183-8f96-03736aa007e6" name="Changes" comment="crear clase titulo, pelicula y serie, hijas de titulo.">
-      <change afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/principal/PrincipalConListas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/excepcion/ErrorEnConversionDeDuracionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/TituloOmdb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/principal/PrincipalConBusqueda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/principal/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Pelicula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenMatch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenMatch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/angelpuentesdevv/screenmatch/modelos/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -56,20 +57,44 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Principal.executor": "Run",
+    "Application.PrincipalConBusqueda.executor": "Run",
     "Application.PrincipalConListas.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Angel Puentes/Downloads/Oracle ONE/Java/ScreenMatch",
+    "last_opened_file_path": "C:/Users/Angel Puentes/Downloads/Oracle ONE/gson-2.10.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="PrincipalConBusqueda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.angelpuentesdevv.screenmatch.principal.PrincipalConBusqueda" />
+      <module name="ScreenMatch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.angelpuentesdevv.screenmatch.principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PrincipalConBusqueda" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,7 +121,15 @@
       <workItem from="1729119284045" duration="27000" />
       <workItem from="1729639073352" duration="4402000" />
       <workItem from="1729808330364" duration="3669000" />
-      <workItem from="1730038848566" duration="11704000" />
+      <workItem from="1730038848566" duration="13659000" />
+      <workItem from="1730072742083" duration="4919000" />
+      <workItem from="1730138194777" duration="5488000" />
+      <workItem from="1730741474668" duration="3914000" />
+      <workItem from="1730840863211" duration="1647000" />
+      <workItem from="1730902711242" duration="346000" />
+      <workItem from="1731447117344" duration="6688000" />
+      <workItem from="1731513640763" duration="95000" />
+      <workItem from="1731541828956" duration="728000" />
     </task>
     <servers />
   </component>
