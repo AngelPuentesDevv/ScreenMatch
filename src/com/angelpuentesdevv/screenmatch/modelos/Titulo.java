@@ -7,10 +7,8 @@ public class Titulo implements Comparable<Titulo> {
 
     //Atributos que representan las características del objeto
 
-    @SerializedName("Title")
     private String nombre;
 
-    @SerializedName("Year")
     private int fechaDeLanzamiento;
 
     private int duracionEnMinutos;
@@ -72,6 +70,10 @@ public class Titulo implements Comparable<Titulo> {
         this.incluidoEnElPlan = incluidoEnElPlan;
     }
 
+    public double getSumaDeLasEvaluaciones() {
+        return sumaDeLasEvaluaciones;
+    }
+
     //Creación de un nuevo método (Convención: verbos en imperativo)
 
     public void muestraFichaTecnica(){
@@ -99,8 +101,8 @@ public class Titulo implements Comparable<Titulo> {
     @Override
     public String toString() {
         return
-                "nombre='" + nombre + '\'' +
+                "(nombre=" + nombre +
                 ", fechaDeLanzamiento=" + fechaDeLanzamiento +
-                ", duración= " + duracionEnMinutos;
+                ", duración= " + duracionEnMinutos + ")";
     }
 }
